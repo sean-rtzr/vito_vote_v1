@@ -1,5 +1,5 @@
 <template>
-  <v-app :theme="theme">
+  <v-app :theme="theme" >
     <v-main>
       <router-view />
     </v-main>
@@ -14,6 +14,5 @@ const theme = ref('light');
 
 </script>
 
-<style lang="scss" scoped>
-
+<style lang="scss" scoped >
 </style>

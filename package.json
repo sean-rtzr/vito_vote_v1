@@ -1,11 +1,12 @@
 {
   "name": "vito_vote_v1",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "build": "vite build",
-    "dev": "vite",
-    "preview": "vite preview"
+    "dev": "vite --host --open",
+    "preview": "vite preview",
+    "deploy": "vite build && netlity deploy"
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
