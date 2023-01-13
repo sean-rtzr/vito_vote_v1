@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app :theme="theme">
     <v-main>
       <router-view />
     </v-main>
@@ -7,6 +7,10 @@
 </template>
 
 <script setup>
+import { ref } from "vue";
+
+const theme = ref('light');
+
 
 </script>
 
