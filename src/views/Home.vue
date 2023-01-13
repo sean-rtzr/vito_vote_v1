@@ -4,6 +4,7 @@
       <v-img :src="$vuetify.theme.name === 'light' ? vitoLogoLight : vitoLogoDark" width="72px" alt="비토 로고" />
     </v-btn>
     <v-app-bar-title v-if="!$vuetify.display.mobile" class="text-body-2 font-weight-regular">원하시는 기능에 함께 투표해주세요</v-app-bar-title>
+    <v-spacer></v-spacer>
     <v-btn class="text-caption font-weight-bold" :class="$style.suggestion" rounded><i class="mdi mdi-plus"></i>제안하기</v-btn>
   </v-app-bar>
   <TopNav />
