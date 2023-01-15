@@ -1,13 +1,12 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from "vue";
+import App from "./App.vue";
 import router from "./router/index.js";
-import vuetify from './plugins/vuetify'
-import { loadFonts } from './plugins/webfontloader'
+import vuetify from "./plugins/vuetify";
+import Vue3Lottie from "@reslear/vue3-lottie";
+import { loadFonts } from "./plugins/webfontloader";
 import "./assets/scss/_default.scss";
+import store from './store'
 
-loadFonts()
+loadFonts();
 
-createApp(App)
-  .use(vuetify)
-  .use(router)
-  .mount('#app')
+createApp(App).use(store).use(vuetify).use(router).use(Vue3Lottie).mount("#app");
