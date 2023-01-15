@@ -1,5 +1,5 @@
 <template>
-  <v-app :class="theme === 'light' ? $style.light : $style.dark" :theme="theme" >
+  <v-app :class="theme === 'light' ? $style.light : $style.dark" :theme="theme">
     <v-main>
       <router-view />
     </v-main>
@@ -9,17 +9,14 @@
 <script setup>
 import { ref } from "vue";
 
-const theme = ref('light');
-
-
+const theme = ref("light");
 </script>
 
-<style module lang="scss" scoped >
-
+<style module lang="scss" scoped>
 .light {
-  background-color: #EFF3F6;
+  background-color: #eff3f6;
 }
 .dark {
-   background-color: #111111;
- }
+  background-color: #111111;
+}
 </style>
