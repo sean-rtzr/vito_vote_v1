@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "vite build",
-    "deploy": "vite build && netlity deploy",
+    "deploy": "vite build && netlify deploy",
     "dev": "vite --host --open",
     "preview": "vite preview"
   },
@@ -19,7 +19,6 @@
     "vue": "^3.2.45",
     "vue-router": "^4.1.6",
     "vuetify": "^3.0.0-beta.0",
-    "vuex": "^4.0.0",
     "webfontloader": "^1.0.0"
   },
   "devDependencies": {
