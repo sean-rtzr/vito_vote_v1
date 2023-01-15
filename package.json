@@ -1,15 +1,16 @@
 {
   "name": "vito_vote_v1",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "build": "vite build",
+    "deploy": "vite build && netlify deploy",
     "dev": "vite --host --open",
-    "preview": "vite preview",
-    "deploy": "vite build && netlity deploy"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
+    "@reslear/vue3-lottie": "^0.0.6",
     "eslint-plugin-prettier-vue": "^4.2.0",
     "roboto-fontface": "*",
     "sass": "^1.57.1",
@@ -22,6 +23,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
     "vite": "^4.0.0",
     "vue-cli-plugin-vuetify": "~2.5.8",
     "webpack-plugin-vuetify": "^2.0.0-alpha.0"

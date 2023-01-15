@@ -2,7 +2,11 @@
   <v-container fluid>
     <div :class="$style.subtitle">
       <div :class="$style.divider"></div>
-      <p class="text-body-2" :class="$style.title" v-html="$attrs.title"></p>
+      <v-card-text
+        class="text-body-2"
+        :class="$style.title"
+        v-html="$attrs.title"
+      ></v-card-text>
       <div :class="$style.divider"></div>
     </div>
   </v-container>
@@ -18,8 +22,7 @@
   text-align: center;
 
   .title {
-    width: 100%;
-    max-width: 100px;
+    white-space: nowrap;
     color: #8697a1;
   }
 
